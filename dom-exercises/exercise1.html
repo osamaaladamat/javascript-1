@@ -17,6 +17,18 @@
     </style>
 </head>
 <body>
-<div id="mydiv">Hello world</div>
+<div id="mydiv" onmouseover="mouseOver()" onmouseout="mouseOut()">Hello world</div>
+
+
+<script>
+    function mouseOver() {
+      document.getElementById("mydiv").innerHTML = "Can I help you?";
+    }
+    
+    function mouseOut() {
+      document.getElementById("mydiv").innerHTML = "Hello world";
+    }
+    </script>
+
 </body>
 </html>

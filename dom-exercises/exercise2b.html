@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise #2b (3): Randomizing initial color</title>
+    <style>
+        #mydiv {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        /* TODO: write JS code here */
+        var colors = ["#ff0000","#009900","#0000ff","#ff0000"]
+
+        function changeColor() {
+            var col = document.getElementById("mydiv");
+            col.style.backgroundColor = colors[Math.floor((Math.random()*3)+1)];
+        } 
+        
+    </script>
+</head>
+<body>
+
+<div id="mydiv" onclick="changeColor()"></div>
+
+</body>
+</html>
